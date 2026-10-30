@@ -1,0 +1,187 @@
+<<<<<<< Updated upstream
+=======
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Painel demonstrativo da comissão organizadora da SASI-UFRRJ.">
+  <title>Painel da Comissão - SASI-UFRRJ</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <!-- Cabeçalho compartilhado com as demais páginas do portal -->
+  <header>
+    <a href="index.html" class="logo">SASI-UFRRJ</a>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburguer" aria-label="Abrir ou fechar o menu">&#9776;</label>
+
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="programacao.html">Programação</a></li>
+        <li><a href="inscricao.html">Inscrição</a></li>
+        <li><a href="submissao.html">Palestrante</a></li>
+        <li><a href="painel-comissao.html" aria-current="page">Comissão</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pagina painel-comissao">
+    <p class="breadcrumb"><a href="index.html">Início</a> / Comissão</p>
+
+    <section class="introducao-pagina" aria-labelledby="titulo-pagina">
+      <h1 id="titulo-pagina">Painel da comissão</h1>
+      <p>Visão geral das inscrições, propostas e ocupação dos espaços do evento.</p>
+      <p class="aviso-demonstracao"><strong>Dados demonstrativos:</strong> os valores e as situações apresentados nesta página são exemplos estáticos para representar o painel. Não correspondem a dados reais nem são atualizados automaticamente.</p>
+    </section>
+
+    <section class="secao-painel" aria-labelledby="titulo-indicadores">
+      <h2 id="titulo-indicadores">Indicadores gerais</h2>
+      <div class="grade-indicadores">
+        <article class="indicador">
+          <p class="indicador-rotulo">Total de inscritos</p>
+          <p class="indicador-valor">128</p>
+          <p class="indicador-nota">Exemplo ilustrativo</p>
+        </article>
+        <article class="indicador">
+          <p class="indicador-rotulo">Propostas recebidas</p>
+          <p class="indicador-valor">12</p>
+          <p class="indicador-nota">Exemplo ilustrativo</p>
+        </article>
+        <article class="indicador">
+          <p class="indicador-rotulo">Ocupação média</p>
+          <p class="indicador-valor">68%</p>
+          <p class="indicador-nota">Exemplo ilustrativo</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao-painel" aria-labelledby="titulo-inscricoes">
+      <h2 id="titulo-inscricoes">Inscrições por atividade</h2>
+      <div class="tabela-responsiva" role="region" aria-label="Tabela de inscrições por atividade" tabindex="0">
+        <table class="tabela-dados">
+          <caption>Valores demonstrativos para a interface</caption>
+          <thead>
+            <tr>
+              <th scope="col">Atividade</th>
+              <th scope="col">Tipo</th>
+              <th scope="col">Inscritos</th>
+              <th scope="col">Vagas</th>
+              <th scope="col">Situação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Introdução ao desenvolvimento web</th>
+              <td>Minicurso</td>
+              <td>24</td>
+              <td>30</td>
+              <td><span class="status status-aberta">Vagas disponíveis</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Git e controle de versão na prática</th>
+              <td>Minicurso</td>
+              <td>30</td>
+              <td>30</td>
+              <td><span class="status status-lotada">Lotada</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Oportunidades na área de Sistemas de Informação</th>
+              <td>Palestra</td>
+              <td>42</td>
+              <td>80</td>
+              <td><span class="status status-aberta">Vagas disponíveis</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Fundamentos de análise de dados</th>
+              <td>Minicurso</td>
+              <td>18</td>
+              <td>25</td>
+              <td><span class="status status-aberta">Vagas disponíveis</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="secao-painel" aria-labelledby="titulo-ocupacao">
+      <h2 id="titulo-ocupacao">Cronograma de ocupação das salas</h2>
+      <p class="texto-apoio">A grade ilustra a ocupação por horário. A capacidade indicada é um exemplo e precisa ser confirmada pela organização.</p>
+      <div class="tabela-responsiva" role="region" aria-label="Grade de ocupação das salas por horário" tabindex="0">
+        <table class="tabela-dados tabela-ocupacao">
+          <caption>Ocupação demonstrativa por espaço e horário</caption>
+          <thead>
+            <tr>
+              <th scope="col">Espaço</th>
+              <th scope="col">Capacidade</th>
+              <th scope="col">09:00</th>
+              <th scope="col">11:00</th>
+              <th scope="col">14:00</th>
+              <th scope="col">16:00</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Auditório ICE</th>
+              <td>80 pessoas</td>
+              <td><span class="status status-ocupada">Ocupado</span></td>
+              <td><span class="status status-livre">Livre</span></td>
+              <td><span class="status status-ocupada">Ocupado</span></td>
+              <td><span class="status status-livre">Livre</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Laboratório 1 — DCOMP</th>
+              <td>30 pessoas</td>
+              <td><span class="status status-ocupada">Ocupado</span></td>
+              <td><span class="status status-ocupada">Ocupado</span></td>
+              <td><span class="status status-livre">Livre</span></td>
+              <td><span class="status status-livre">Livre</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Laboratório 2 — DCOMP</th>
+              <td>25 pessoas</td>
+              <td><span class="status status-livre">Livre</span></td>
+              <td><span class="status status-ocupada">Ocupado</span></td>
+              <td><span class="status status-ocupada">Ocupado</span></td>
+              <td><span class="status status-livre">Livre</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Sala ICE 02</th>
+              <td>40 pessoas</td>
+              <td><span class="status status-livre">Livre</span></td>
+              <td><span class="status status-livre">Livre</span></td>
+              <td><span class="status status-ocupada">Ocupado</span></td>
+              <td><span class="status status-livre">Livre</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="nota-tabela">Em telas pequenas, deslize horizontalmente sobre a tabela para visualizar todas as colunas.</p>
+    </section>
+
+    <section class="atalho-publicacoes" aria-labelledby="titulo-publicacoes">
+      <div>
+        <h2 id="titulo-publicacoes">Avisos, atas e notícias</h2>
+        <p>Acesse a área destinada às publicações da comissão organizadora.</p>
+      </div>
+      <a class="botao link-publicacoes" href="publicacoes.html">Acessar publicações</a>
+    </section>
+  </main>
+
+  <!-- Rodapé compartilhado com as demais páginas do portal -->
+  <footer>
+    <p>UFRRJ &middot; ICE &middot; DCOMP</p>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="programacao.html">Participante</a></li>
+      <li><a href="submissao.html">Palestrante</a></li>
+      <li><a href="painel-comissao.html">Comissão</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
+>>>>>>> Stashed changes

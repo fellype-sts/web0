@@ -249,3 +249,257 @@ textarea {
     max-width: 600px;
   }
 }
+
+/* Complementos ao estilo básico compartilhado pelas páginas do portal. */
+
+.pagina {
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.breadcrumb p {
+  margin: 0;
+}
+
+.introducao-pagina,
+.dia-programacao,
+.secao-painel {
+  margin-bottom: 24px;
+}
+
+.aviso-demonstracao,
+.atalho-publicacoes {
+  border: 1px solid #000;
+  padding: 12px;
+}
+
+/* Esta navegação deve ficar visível também no celular. */
+.navegacao-dias {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.navegacao-dias a {
+  border: 1px solid #000;
+  padding: 8px 16px;
+  text-align: center;
+}
+
+.titulo-dia {
+  border-bottom: 1px solid #000;
+  margin-bottom: 12px;
+}
+
+.titulo-dia h2,
+.titulo-dia p {
+  margin: 4px 0;
+}
+
+.atividade-cartao,
+.indicador,
+.detail-card,
+.guest,
+.material-cartao {
+  border: 1px solid #000;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.atividade-horario,
+.detail-text-bold,
+.guest-name {
+  font-weight: bold;
+}
+
+.atividade-conteudo {
+  min-width: 0;
+}
+
+.atividade-conteudo h3 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.atividade-conteudo p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.atividade-etiquetas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.etiqueta,
+.status,
+.material-tipo {
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+.status-lotada,
+.status-ocupada {
+  background: #000;
+  color: #fff;
+}
+
+.link-detalhes {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.indicador p {
+  margin: 4px 0;
+}
+
+.indicador-valor {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.indicador-nota,
+.texto-apoio,
+.nota-tabela {
+  font-size: 14px;
+}
+
+.tabela-responsiva {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.tabela-dados {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.tabela-dados caption {
+  text-align: left;
+  padding-bottom: 8px;
+}
+
+.tabela-dados th,
+.tabela-dados td {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+  min-width: 100px;
+}
+
+.tabela-dados thead {
+  background: #eee;
+}
+
+.atalho-publicacoes h2,
+.atalho-publicacoes p {
+  margin: 0 0 8px;
+}
+
+.details {
+  margin: 20px 0;
+}
+
+.detail-card p {
+  margin: 4px 0;
+}
+
+.detail-text,
+.guest-description {
+  font-size: 14px;
+}
+
+.guest-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.guest-image {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #000;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.guest-texts {
+  min-width: 0;
+}
+
+.guest-texts p {
+  margin: 4px 0;
+}
+
+.materiais-indicados {
+  margin-top: 24px;
+}
+
+.material-cabecalho {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.material-cabecalho p {
+  margin: 0;
+}
+
+.materiais-apoio a {
+  display: block;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .atividade-cartao {
+    display: flex;
+    gap: 16px;
+  }
+
+  .atividade-horario {
+    flex: 0 0 72px;
+    border-right: 1px solid #000;
+  }
+
+  .atividade-etiquetas {
+    margin-top: 0;
+  }
+
+  .grade-indicadores {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .detail-line {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .link-publicacoes,
+  .pagina-detalhes > .botao {
+    width: fit-content;
+    padding-inline: 24px;
+  }
+}
