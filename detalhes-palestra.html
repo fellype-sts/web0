@@ -1,16 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="detalhes-palestra.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Detalhes da palestra - SASI-UFRRJ</title>
 </head>
 
 <body>
 
-    <main>
+  <header>
+    <a href="index.html" class="logo">SASI-UFRRJ</a>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburguer">&#9776;</label>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="programacao.html">Programação</a></li>
+        <li><a href="inscricao.html">Inscrição</a></li>
+        <li><a href="submissao.html">Palestrante</a></li>
+        <li><a href="painel-comissao.html">Comissão</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <main class="pagina pagina-detalhes">
         <div class="breadcrumb">
             <p class="breadcrumb-item">
                 Inicio
@@ -33,7 +50,6 @@
         <h1>
             Titulo da Atividade
         </h1>
-        <hr />
         <div class="details">
             <div class="detail-line">
                 <div class="detail-card">
@@ -74,7 +90,7 @@
             </p>
         </div>
 
-        <div>
+        <div class="materiais-apoio">
             <h3>Material de apoio</h3>
             <a href="https://www.youtube.com/watch?v=DLzxrzFCyOs&list=RDDLzxrzFCyOs">Material-1.pdf</a>
             <a href="https://www.youtube.com/watch?v=DLzxrzFCyOs&list=RDDLzxrzFCyOs">Material-2.pdf</a>
@@ -95,11 +111,20 @@
                 iure corporis? Sequi eligendi nostrum dolore</p>
         </div>
         <div class="spacer"></div>
-        <button class="button">Inscrever-se</button>
+        <a class="botao" href="inscricao.html">Inscrever-se</a>
 
 
 
     </main>
+  <footer>
+    <p>UFRRJ &middot; ICE &middot; DCOMP</p>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="programacao.html">Participante</a></li>
+      <li><a href="submissao.html">Palestrante</a></li>
+      <li><a href="painel-comissao.html">Comissão</a></li>
+    </ul>
+  </footer>
 </body>
 
 </html>

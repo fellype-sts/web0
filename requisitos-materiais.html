@@ -1,62 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="requisitos-materiais.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Requisitos e materiais - SASI-UFRRJ</title>
 </head>
 
 <body>
 
+  <header>
+    <a href="index.html" class="logo">SASI-UFRRJ</a>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburguer">&#9776;</label>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="programacao.html">Programação</a></li>
+        <li><a href="inscricao.html">Inscrição</a></li>
+        <li><a href="submissao.html">Palestrante</a></li>
+        <li><a href="painel-comissao.html">Comissão</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <main class="pagina pagina-materiais">
     <h1>
         Requisitos e Materiais
     </h1>
 
-    <hr />
-
-    <p>Softwares necessários</p>
+    <form>
+    <label for="softwares">Softwares necessários</label>
     <input class="software-input" type="text" id="softwares" name="softwares">
 
-    <p>Laboratório desejado</p>
-    <select name="cars" id="cars">
+    <label for="laboratorio">Laboratório desejado</label>
+    <select name="laboratorio" id="laboratorio">
         <option value="lab1">Lab 1</option>
         <option value="lab2">Lab 2</option>
         <option value="lab3">Lab 3</option>
     </select>
 
-    <p>Pré requisitos para os inscritos</p>
-    <input class="software-input" type="text" id="softwares" name="softwares">
+    <label for="pre-requisitos">Pré requisitos para os inscritos</label>
+    <input class="software-input" type="text" id="pre-requisitos" name="pre-requisitos">
 
     <h2>Material de apoio</h2>
 
-    <p>Arquivo</p>
-    <div>
-        <button>Escolher arquivo</button>
-        <p>Nenhum arquivo selecionado</p>
-    </div>
+    <label for="arquivo">Arquivo</label>
+    <input type="file" id="arquivo" name="arquivo">
 
-    <p>Descrição do arquivo</p>
-    <input type="text" id="softwares" name="softwares">
+    <label for="descricao-arquivo">Descrição do arquivo</label>
+    <input type="text" id="descricao-arquivo" name="descricao-arquivo">
 
-    <button class="button">Adicionar material</button>
+    <button type="button" class="botao">Adicionar material</button>
+    </form>
 
+    <section class="materiais-indicados">
     <h2>Materiais indicados</h2>
-    <div>
-        <div>
-            <p>PDF</p>
+    <div class="material-cartao">
+        <div class="material-cabecalho">
+            <p class="material-tipo">PDF</p>
             <p>material-1.pdf</p>
         </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ratione.</p>
     </div>
-    <div>
-        <div>
-            <p>ZIP</p>
+    <div class="material-cartao">
+        <div class="material-cabecalho">
+            <p class="material-tipo">ZIP</p>
             <p>material-2.pdf</p>
         </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ratione.</p>
     </div>
+    </section>
+    </main>
+  <footer>
+    <p>UFRRJ &middot; ICE &middot; DCOMP</p>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="programacao.html">Participante</a></li>
+      <li><a href="submissao.html">Palestrante</a></li>
+      <li><a href="painel-comissao.html">Comissão</a></li>
+    </ul>
+  </footer>
 </body>
 
 </html>
